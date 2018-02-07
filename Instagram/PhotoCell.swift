@@ -12,18 +12,22 @@ import ParseUI
 
 class PhotoCell: UITableViewCell {
     
+    
+    
     @IBOutlet weak var uploadImage: PFImageView!
     @IBOutlet weak var captionLabel: UILabel!
     @IBOutlet weak var userLabel: UILabel!
     
     
     var instagramPost: PFObject! {
-        didSet {
+        willSet {
            
-            self.captionLabel.text = instagramPost["caption"] as? String
+            self.captionLabel.text = newValue["caption"] as? String!
             self.userLabel.text = PFUser.current()!.username
-            self.uploadImage.file = instagramPost["image"] as? PFFile
+            self.uploadImage.file = newValue["media"] as? PFFile
             self.uploadImage.loadInBackground()
+            print(captionLabel.text)
+            print(uploadImage.file)
         }
     }
     

@@ -74,26 +74,15 @@ class PhotosViewController: UIViewController, UIImagePickerControllerDelegate, U
                 print("Error")
                 print(error.localizedDescription)
             }else{
-               print("No Error")
+               print("Your photo has been saved")
+                self.caption.text!.removeAll()
+                [self.navigationController?.popViewController(animated: true)]
                 
             }
             
             
         }
         
-//        let instaPost = PFObject(className: "Post")
-//        instaPost["username"] = PFUser.current()!.username
-//        instaPost["image"] = uploadImage
-//        instaPost["caption"] = caption.text ?? ""
-//
-//        instaPost.saveInBackground { (success, error) in
-//            if success {
-//                print("Your picture was saved!")
-//
-//            } else if let error = error {
-//                print("Problem saving message: \(error.localizedDescription)")
-//            }
-//        }
     }
     
     

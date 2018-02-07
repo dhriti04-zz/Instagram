@@ -15,6 +15,7 @@
 		D420B38720265D7700330468 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D420B38620265D7700330468 /* ProfileViewController.swift */; };
 		D420B38B2026630300330468 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D420B38A2026630300330468 /* PhotoCell.swift */; };
 		D420B38D202665B200330468 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = D420B38C202665B200330468 /* Post.swift */; };
+		D46A7DC8202A667B00C1A1E6 /* TapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46A7DC7202A667B00C1A1E6 /* TapViewController.swift */; };
 		D48FE238201FF387005F024C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48FE237201FF387005F024C /* AppDelegate.swift */; };
 		D48FE23D201FF388005F024C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D48FE23B201FF388005F024C /* Main.storyboard */; };
 		D48FE23F201FF388005F024C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D48FE23E201FF388005F024C /* Assets.xcassets */; };
@@ -55,6 +56,7 @@
 		D420B38620265D7700330468 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		D420B38A2026630300330468 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		D420B38C202665B200330468 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		D46A7DC7202A667B00C1A1E6 /* TapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapViewController.swift; sourceTree = "<group>"; };
 		D48FE234201FF387005F024C /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D48FE237201FF387005F024C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D48FE23C201FF388005F024C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				D420B38620265D7700330468 /* ProfileViewController.swift */,
 				D420B38A2026630300330468 /* PhotoCell.swift */,
 				D420B38C202665B200330468 /* Post.swift */,
+				D46A7DC7202A667B00C1A1E6 /* TapViewController.swift */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -492,6 +495,7 @@
 				D48FE238201FF387005F024C /* AppDelegate.swift in Sources */,
 				D420B38B2026630300330468 /* PhotoCell.swift in Sources */,
 				D420B38D202665B200330468 /* Post.swift in Sources */,
+				D46A7DC8202A667B00C1A1E6 /* TapViewController.swift in Sources */,
 				D420B38320265AB400330468 /* NewsFeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

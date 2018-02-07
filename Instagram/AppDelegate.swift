@@ -26,13 +26,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             })
             
         )
-        
-//         check if user is logged in.
-//        if PFUser.current() != nil {
-//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//            // view controller currently being set in Storyboard as default will be overridden
-//            window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "AuthenticatedViewController")
-//        }
+        if let currentUser = PFUser.current() {
+            print("Welcome back \(currentUser.username!) 😀")
+            
+            // TODO: Load view controller and set as root view controller
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let navController = storyboard.instantiateViewController(withIdentifier: "PostView")
+            window?.rootViewController = navController
+            
+        }
+
         return true
     }
     
